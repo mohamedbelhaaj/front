@@ -8,7 +8,7 @@ pipeline {
         stage('Build image front2/sysinfo ') {
             
             steps { 
-            dir ('/front') {
+            dir ('') {
                  sh ' sudo docker build -t front2/sysinfo  . && sudo docker run -d -it -p 82:82/tcp --name sysinfo front2/sysinfo:latest'
                
                          }
