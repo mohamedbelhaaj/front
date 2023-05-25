@@ -9,7 +9,7 @@ pipeline {
             
             steps { 
             dir ('') {
-                 sh ' sudo docker build -t front2/sysinfo  . && sudo docker run -d -it -p 82:82/tcp --name sysinfo front2/sysinfo:latest'
+                 sh ' sudo docker build -t front2/sysinfo  . && sudo docker run -d -it -p 80:80/tcp --name sysinfo front2/sysinfo:latest'
                
                          }
                       
